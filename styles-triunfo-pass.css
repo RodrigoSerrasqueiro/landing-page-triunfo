@@ -1,0 +1,849 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+a {
+  color: inherit;
+}
+
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('./Background-01.webp');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  color: #FFF;  
+  position: relative;                                      
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  padding: 100px 0px;
+  width: 100%;
+  max-width: 550px;
+}
+
+.home-logo {
+  width: 250px;
+  height: auto;
+}
+
+.home-title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.gradient-text {
+  font-size: clamp(2.2rem, 2.4vw, 5.2rem);
+  line-height: 1.2;
+  text-align: center;
+  background-image: linear-gradient(90deg, #28affd 0%, #1675f2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.video-container {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.action-link {
+  padding: 12px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+  text-transform: uppercase;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.avatars {
+  width: 100%;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.avatars-img {
+  width: 170px;
+  height: auto;
+}
+
+.avatars-text {
+  width: 40%;
+  padding-top: 5px;
+}
+
+.benefits-cards {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  width: 250px;
+}
+
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.benefit-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+#with-border {
+  border-left: 2px solid #667EA1;
+  border-right: 2px solid #667EA1;
+}
+
+.arrow {
+  width: 55px;
+  height: 100px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: #000C43;
+  border: 2px solid #667ea1;
+  position: absolute;
+  bottom: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow i {
+  font-size: 2rem;
+}
+
+.description-container {
+  background-color: #FFF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.description-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 30px;
+  padding: 100px 0 60px 0;
+}
+
+.description-img {
+  width: 700px;
+  height: auto;
+}
+
+.description-texts {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  font-size: 1.1rem;
+}
+
+.course-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 60px;
+  background-color: #000033;
+  color: #FFF;
+  overflow-x: hidden;
+}
+
+.course-content {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-top: 100px;
+}
+
+.course-content-box {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid blue;
+  background-color: #000C43;
+}
+
+.course-content-description {
+  width: 50%;
+  height: 100%;
+  padding-left: 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 60px;
+  text-align: left;
+}
+
+.course-content-description p {
+  font-size: 1.2rem;
+}
+
+.panels {
+  width: 50%;
+  padding-top: 40px;
+  padding-left: 35px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  position: relative;
+  background-color: #000C43;
+}
+
+.panel-arrows {
+  display: flex;
+  column-gap: 15px;
+}
+
+.panel-arrow {
+  width: 70px;
+  height: 30px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: #000C43;
+  border: 2px solid #667ea1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.panel-arrow i {
+  font-size: 1.2rem;
+}
+
+.panel-boxes {
+  display: flex;
+  column-gap: 15px;
+  position: absolute;
+  right: -340px;
+  bottom: 60px;
+  background-color: #000C43;
+}
+
+.panel-img {
+  width: 370px;
+  height: auto;
+}
+
+#box-reverse {
+  flex-direction: row-reverse;
+}
+
+#description-reverse {
+  padding-left: 0;
+  padding-right: 60px;
+}
+
+#panels-reverse {
+  align-items: end;
+  padding-right: 30px;
+}
+
+#panel-boxes-reverse {
+  left: -340px;
+  background-color: transparent;
+}
+
+.gradient-title {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.gradient-title h2 {
+  font-size: 2.2rem;
+}
+
+.certificate-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(#000033, #290066);
+  position: relative;
+  color: #FFF;
+  padding-top: 40px;
+}
+
+.certificate-content {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.certificate-img {
+  width: 50%;
+  position: relative;
+}
+
+.certificate-img img {
+  width: 750px;
+  height: auto;
+  position: relative;
+  left: -220px;
+  bottom: -40px;
+}
+
+.certificate-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  row-gap: 60px;
+}
+
+.certificate-title {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.certificate-title i {
+  font-size: 2rem;
+  color: #0072ff;
+  background-color: #FFF;
+  border-radius: 50%;
+}
+
+.certificate-text p {
+  font-size: 1.2rem;
+}
+
+.teachers-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000033;
+  color: #FFF;
+  padding: 100px 0;
+}
+
+.teachers-content {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 60px;
+}
+
+.teachers-title {
+  width: 320px;
+  text-align: center;
+}
+
+.teachers-title h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.teachers-cards {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.teacher-card {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  text-align: center;
+}
+
+.teacher-card img {
+  width: 100%;
+  height: 400px;
+}
+
+.teacher-card span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.teacher-card p {
+  font-size: 0.9rem;
+}
+
+.plans-container {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 200px 0;
+  background-color: #FFF;
+}
+
+.plans-content {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 200px;
+}
+
+.plans-text {
+  display: flex;
+  align-items: end;
+  text-align: center;
+  column-gap: 10px;
+}
+
+.plans-text h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.plan-cards {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.plan-expert-card {
+  width: 370px;
+  border-radius: 12px;
+  background-color: #e6e6e6;
+  position: relative;
+  padding: 60px 50px 25px 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.plan-expert-card img {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  top: -120px;
+  right: -33px;
+}
+
+.plan-pass-card {
+  width: 370px;
+  border-radius: 12px;
+  background-color: #000c43;
+  color: #FFF;
+  position: relative;
+  padding: 60px 50px 25px 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.plan-pass-card img {
+  width: 220px;
+  height: auto;
+  position: absolute;
+  top: -115px;
+  right: 60px;
+}
+
+.plan-button {
+  padding: 20px 70px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #FFF;
+  column-gap: 5px;
+  font-size: 1.1rem;
+}
+
+#gradient-blue {
+  background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+}
+
+#gradient-green {
+  background: linear-gradient(90deg, #1ac30e 0%, #80ff6c 100%);
+}
+
+.plans-card-title {
+  display: flex;
+  align-items: end;
+  column-gap: 10px;
+}
+
+.plans-card-title h2 {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.plan-card-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 5px;
+}
+
+/* .plan-card-arrow {
+  width: 55px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: #000C43;
+  border: 2px solid #290066;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.plan-card-description i {
+  font-size: 1.5rem;
+  color: #000C43;
+}
+
+.plan-card-description span {
+  color: #000033;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.plan-price {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 12px;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  color: #000033;
+  background-color: #ccc;
+}
+
+.plan-price span {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.plan-price h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.plan-card-arrows {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.plan-pass-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+/* .plan-pass-arrow {
+  width: 55px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 2px solid #290066;
+  box-shadow: 0 5px 10px 0 #290066;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.plan-pass-items i {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.plan-pass-items span {
+  font-size: 1.1rem;
+}
+
+#destak {
+  color: #00d4ff;
+}
+
+.plan-pass-price {
+  width: 100%;
+  border-radius: 12px;
+  background-color: #000e4d;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #290066;
+}
+
+.plan-pass-price h2 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.pass-price {
+  display: flex;
+  align-items: center;
+}
+
+.pass-price span {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.pass-price h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.plan-pass-price p {
+  font-size: 1rem;
+  color: #667EA1;
+}
+
+.divider {
+  width: 100%;
+  height: 100px;
+  background-color: #000033;
+}
+
+.garanties-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('./Background-01.webp');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #FFF;
+}
+
+.garanties-content {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  padding: 230px 0 150px 0;
+}
+
+.garanties-content img {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  top: -150px;
+}
+
+.garanties-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 450px;
+}
+
+.garanties-title h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.garanties-description {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.faq-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000033;
+}
+
+.faq-content {
+  width: 100%;
+  max-width: 900px;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.faq-content .content-box {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.faq-content .content-box .label {
+  position: relative;
+  background-color: #001a4d;
+  cursor: pointer;
+}
+
+.label {
+  padding: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.faq-content .content-box .label::before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.faq-content .content-box .content {
+  position: relative;
+  background-color: #fff;
+  color: #000033;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.faq-content .content-box.active .content {
+  height: auto;
+  padding: 10px;
+}
+
+.faq-content .content-box.active .label::before {
+  content: '-';
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #000033;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding: 80px 0 100px 0; 
+  text-align: center;
+}
+
+#whatsapp-icon {
+  font-size: 7rem;
+  color: gray;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000; */
+}
+
+.footer-text h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.footer-content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.whatsapp-link {
+  padding: 20px 40px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  justify-content: center;
+}
+
+.whatsapp-link i {
+  font-size: 1.5rem;
+}
