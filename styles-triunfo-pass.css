@@ -477,7 +477,7 @@ a {
   border-radius: 12px;
   background-color: #e6e6e6;
   position: relative;
-  padding: 60px 50px 25px 50px;
+  padding: 60px 30px 25px 30px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -552,8 +552,8 @@ a {
 .plan-card-description {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  align-items: center;
+  column-gap: 10px;
   row-gap: 5px;
 }
 
@@ -1028,7 +1028,7 @@ footer {
 
   .plan-expert-card {
     width: 100%;
-    padding: 60px 50px 25px 50px;
+    padding: 60px 30px 25px 30px;
     box-sizing: border-box;
   }
   
