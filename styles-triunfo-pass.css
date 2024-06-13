@@ -97,7 +97,7 @@ a {
 }
 
 .avatars-img {
-  width: 170px;
+  width: 250px;
   height: auto;
 }
 
@@ -841,13 +841,17 @@ footer {
     font-weight: bold;
   }
 
+  .avatars {
+    align-items: end;
+  }
+
   .avatars-img {
-    width: 120px;
+    width: 160px;
   }
 
   .avatars-text {
-    font-size: 1.4rem;
-    width: 200px;
+    font-size: 1.3rem;
+    width: 180px;
   }
 
   .video-container {
