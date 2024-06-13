@@ -303,14 +303,14 @@ a {
   background-color: transparent;
 }
 
-.gradient-title {
+/* .gradient-title {
   display: flex;
   align-items: center;
   column-gap: 10px;
-}
+} */
 
 .gradient-title h2 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
 }
 
 .certificate-container {
@@ -449,6 +449,7 @@ a {
 
 .plans-text {
   display: flex;
+  height: 60px;
   align-items: end;
   text-align: center;
   column-gap: 10px;
@@ -930,9 +931,8 @@ footer {
   }
 
   #last-gradient-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: 2.1rem;
+    font-weight: bold;
   }
 
   .panels {
