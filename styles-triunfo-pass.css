@@ -164,7 +164,8 @@ a {
 }
 
 .description-content {
-  width: 80%;
+  width: 100%;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -556,17 +557,6 @@ a {
   row-gap: 5px;
 }
 
-/* .plan-card-arrow {
-  width: 55px;
-  height: 25px;
-  border-radius: 50px;
-  background-color: #000C43;
-  border: 2px solid #290066;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .plan-card-description i {
   font-size: 1.5rem;
   color: #000C43;
@@ -616,29 +606,13 @@ a {
   column-gap: 10px;
 }
 
-/* .plan-pass-arrow {
-  width: 55px;
-  height: 25px;
-  border-radius: 50px;
-  background-color: transparent;
-  border: 2px solid #290066;
-  box-shadow: 0 5px 10px 0 #290066;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .plan-pass-items i {
   font-size: 1.5rem;
-  color: #ccc;
+  color: #00d4ff;
 }
 
 .plan-pass-items span {
   font-size: 1.1rem;
-}
-
-#destak {
-  color: #00d4ff;
 }
 
 .plan-pass-price {
@@ -677,12 +651,6 @@ a {
 .plan-pass-price p {
   font-size: 1rem;
   color: #667EA1;
-}
-
-.divider {
-  width: 100%;
-  height: 100px;
-  background-color: #000033;
 }
 
 .garanties-container {
@@ -846,4 +814,286 @@ footer {
 
 .whatsapp-link i {
   font-size: 1.5rem;
+}
+
+.avatars-text {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+
+  .home-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+
+  .gradient-text {
+    font-size: clamp(2rem, 2.4vw, 5.2rem);
+  }
+
+  .home-title {
+    font-size: 1.5rem;
+  }
+
+  .home-gradient-text {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  .avatars-img {
+    width: 120px;
+  }
+
+  .avatars-text {
+    font-size: 1.4rem;
+    width: 200px;
+  }
+
+  .video-container {
+    height: 200px;
+  }
+
+  .description-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  .description-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .course-content-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  .course-content-box {
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;
+  }
+
+  #box-reverse {
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;
+  }
+
+  .panel-boxes {
+    position: static;
+  }
+
+  .panel-img {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  #panel-boxes-reverse {
+    position: static;
+  }
+
+  .panel-img:nth-of-type(2) {
+    display: none;
+  }
+
+  .panel-arrows {
+    display: none;
+  }
+
+  .course-content-description {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px 40px 10px;
+    row-gap: 30px;
+  }
+
+  #action-link {
+    margin-bottom: 60px;
+  }
+
+  #description-reverse {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px 40px 10px;
+    row-gap: 30px;
+  }
+
+  #last-gradient-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .panels {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  #panels-reverse {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .certificate-content {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate-img {
+    position: static;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+  }
+
+  .certificate-img img {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  .certificate-text {
+    align-items: center;
+    text-align: center;
+    padding: 0 15px 80px 15px;
+    box-sizing: border-box;
+    row-gap: 40px;
+  }
+
+  .teachers-container {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+  }
+
+  .teachers-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teacher-card {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .teacher-card img {
+    height: auto;
+  }
+
+  .teacher-card span {
+    font-size: 1.7rem;
+  }
+
+  .teacher-card p {
+    font-size: 1.2rem;
+  }
+
+  .plans-container {
+    padding: 60px 15px 60px 15px;
+    box-sizing: border-box;
+  }
+
+  .plans-content {
+    row-gap: 150px;
+  }
+
+  .plan-cards {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+  }
+
+  .plan-button {
+    margin-bottom: 120px;
+  }
+
+  .plan-expert-card {
+    width: 100%;
+    padding: 60px 50px 25px 50px;
+    box-sizing: border-box;
+  }
+  
+  .plan-expert-card img {
+    width: 370px;
+    height: auto;
+    position: absolute;
+    top: -110px;
+    right: -20px;
+  }
+
+  .plan-card {
+    width: 100%;
+  }
+  
+  .plan-pass-card {
+    width: 100%;
+    padding: 60px 50px 25px 50px;
+    box-sizing: border-box;
+  }
+  
+  .plan-pass-card img {
+    width: 270px;
+    height: auto;
+    position: absolute;
+    top: -140px;
+    right: 40px;
+  }
+
+  .garanties-container {
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+  }
+
+  .garanties-content {
+    padding: 140px 0 100px 0;
+  }
+
+  .garanties-title {
+    width: 100%;
+  }
+
+  .garanties-title h2 {
+    font-size: 1.7rem;
+  }
+
+  .garanties-title span {
+    font-size: 1.5rem;
+  }
+
+  .garanties-content img {
+    width: 300px;
+    height: auto;
+  }
+
+  .faq-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  .faq-content {
+    padding: 80px 0;
+    box-sizing: border-box;
+  }
+
+  .faq-content .content-box {
+    margin: 10px 0px;
+  }
+  
 }
