@@ -301,7 +301,7 @@ a {
 
 .courses-slider {
   overflow: hidden;
-  width: 770px; 
+  width: 760px; 
   position: relative;
 }
 
@@ -309,7 +309,7 @@ a {
   display: flex;
   align-items: center;
   transition: transform 0.5s ease-in-out;
-  gap: 50px;
+  gap: 20px;
 }
 
 .course-img {
@@ -345,7 +345,7 @@ a {
 
 .releases-slider {
   overflow: hidden;
-  width: 770px; 
+  width: 760px; 
   position: relative;
 }
 
@@ -353,7 +353,7 @@ a {
   display: flex;
   align-items: center;
   transition: transform 0.5s ease-in-out;
-  gap: 50px;
+  gap: 20px;
 }
 
 .release-img {
@@ -980,7 +980,7 @@ footer {
   #panel-boxes-reverse {
     position: relative;
     bottom: 10px;
-    left: -120px;
+    left: -130px;
   }
 
   #description-reverse {
@@ -1000,7 +1000,7 @@ footer {
   }
 
   .courses-slider {
-    width: 590px;
+    width: 580px;
   }
 
   .course-img {
@@ -1016,7 +1016,7 @@ footer {
   }
 
   .releases-slider {
-    width: 590px; 
+    width: 580px; 
   }
   
   .release-img {

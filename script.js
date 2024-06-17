@@ -85,22 +85,26 @@ const coursesNextButton = document.querySelector("#courses-btn-next");
 
 let courseCurrentIndex = coursesItems.length - 2;
 let courseItemWidth = getItemWidth();
-let courseItemGap = 50;
+let courseItemGap = 20;
 
 function courseUpdateCarousel() {
   coursesItems.forEach((item, index) => {
     if (index - 1 === courseCurrentIndex) {
       item.firstElementChild.style.transition = "transform 2s easy-in-out";
       item.firstElementChild.style.borderRadius = "12px";
+      item.firstElementChild.style.position = "relative";
+      item.firstElementChild.style.zIndex = "2000";
       item.firstElementChild.style.width = `${courseItemWidth + 30}px`;
     } else {
       item.firstElementChild.style.borderRadius = "12px";
       item.firstElementChild.style.width = `${courseItemWidth}px`;
+      item.firstElementChild.style.position = "relative";
+      item.firstElementChild.style.zIndex = "1000";
     }
   });
 
   const offset = -(courseCurrentIndex * (courseItemWidth + courseItemGap));
-  courseCarousel.style.transform = `translateX(${offset - 50}px)`;
+  courseCarousel.style.transform = `translateX(${offset - 30}px)`;
 
   const courseDescription = document.querySelector(".courses-description");
 
@@ -197,22 +201,26 @@ const releasesNextButton = document.querySelector("#releases-btn-next");
 
 let releasesCurrentIndex = releasesItems.length - 2;
 let releasesItemWidth = getItemWidth();
-const releasesItemGap = 50;
+const releasesItemGap = 20;
 
 function releasesUpdateCarousel() {
   releasesItems.forEach((item, index) => {
     if (index - 1 === releasesCurrentIndex) {
       item.firstElementChild.style.transition = "transform 2s easy-in-out";
       item.firstElementChild.style.borderRadius = "12px";
+      item.firstElementChild.style.position = "relative";
+      item.firstElementChild.style.zIndex = "2000";
       item.firstElementChild.style.width = `${releasesItemWidth + 30}px`;
     } else {
       item.firstElementChild.style.borderRadius = "12px";
       item.firstElementChild.style.width = `${releasesItemWidth}px`;
+      item.firstElementChild.style.position = "relative";
+      item.firstElementChild.style.zIndex = "1000";
     }
   });
 
   const offset = -(releasesCurrentIndex * (courseItemWidth + releasesItemGap));
-  releasesCarousel.style.transform = `translateX(${offset - 50}px)`;
+  releasesCarousel.style.transform = `translateX(${offset - 30}px)`;
 
   const releaseDescription = document.querySelector(".releases-description");
 
