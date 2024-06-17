@@ -272,20 +272,97 @@ a {
 
 .panel-boxes {
   display: flex;
-  column-gap: 15px;
   position: absolute;
-  right: -340px;
-  bottom: 60px;
-  background-color: #000C43;
+  right: -360px;
+  bottom: 40px;
 }
 
-.panel-img {
-  width: 370px;
-  height: auto;
+.formations-slider {
+  overflow: hidden;
+  width: 770px; 
+  position: relative;
 }
 
-#box-reverse {
-  flex-direction: row-reverse;
+.formations-slides {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  gap: 50px;
+}
+
+.formations-course-img {
+  min-width: 370px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.formations-course-img img {
+  width: 100%;
+}
+
+.courses-slider {
+  overflow: hidden;
+  width: 770px; 
+  position: relative;
+}
+
+.courses-slides {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  gap: 50px;
+}
+
+.course-img {
+  min-width: 370px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.course-img img {
+  width: 100%;
+}
+
+.jobs-slider {
+  overflow: hidden;
+  width: 770px; 
+  position: relative;
+}
+
+.jobs-slides {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  gap: 50px;
+}
+
+.jobs-img {
+  min-width: 370px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.jobs-img img {
+  width: 100%;
+}
+
+.releases-slider {
+  overflow: hidden;
+  width: 770px; 
+  position: relative;
+}
+
+.releases-slides {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  gap: 50px;
+}
+
+.release-img {
+  min-width: 370px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.release-img img {
+  width: 100%;
 }
 
 #description-reverse {
@@ -299,15 +376,10 @@ a {
 }
 
 #panel-boxes-reverse {
-  left: -340px;
-  background-color: transparent;
+  position: relative;
+  left: 0;
+  bottom: 10px;
 }
-
-/* .gradient-title {
-  display: flex;
-  align-items: center;
-  column-gap: 10px;
-} */
 
 .gradient-title h2 {
   font-size: 2.1rem;
@@ -879,37 +951,78 @@ footer {
   .course-content-box {
     flex-direction: column-reverse;
     height: auto;
-    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
   }
 
-  #box-reverse {
-    flex-direction: column-reverse;
-    height: auto;
+  #course-content-box-reverse {
+    flex-direction: column;
+  }
+
+  .panels {
     width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+
+  #panels-reverse {
+    width: 100%;
+    padding: 0;
+    align-items: center;
   }
 
   .panel-boxes {
-    position: static;
-  }
-
-  .panel-img {
-    width: 100%;
-    height: auto;
-    position: static;
+    position: relative;
+    bottom: 10px;
+    left: 140px;
   }
 
   #panel-boxes-reverse {
-    position: static;
+    position: relative;
+    bottom: 10px;
+    left: -120px;
   }
 
-  .panel-img:nth-of-type(2) {
-    display: none;
+  #description-reverse {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px 40px 10px;
+    row-gap: 30px;
   }
 
-  .panel-arrows {
-    display: none;
+  .formations-slider {
+    width: 590px; 
+  }
+  
+  .formations-course-img {
+    min-width: 280px;
   }
 
+  .courses-slider {
+    width: 590px;
+  }
+
+  .course-img {
+    min-width: 280px;
+  }
+
+  .jobs-slider {
+    width: 590px; 
+  }
+  
+  .jobs-img {
+    min-width: 280px;
+  }
+
+  .releases-slider {
+    width: 590px; 
+  }
+  
+  .release-img {
+    min-width: 280px;
+  }
+  
   .course-content-description {
     width: 100%;
     align-items: center;
@@ -922,32 +1035,9 @@ footer {
     margin-bottom: 60px;
   }
 
-  #description-reverse {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    padding: 0 10px 40px 10px;
-    row-gap: 30px;
-  }
-
   #last-gradient-title {
     font-size: 2.1rem;
     font-weight: bold;
-  }
-
-  .panels {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-  }
-
-  #panels-reverse {
-    width: 100%;
-    padding: 0;
-    margin-bottom: 20px;
-    padding: 20px;
-    box-sizing: border-box;
   }
 
   .certificate-content {
